@@ -1,0 +1,5 @@
+{
+    "audio": "base64_encoded_audio_string",
+    "text": "Hello, this is a test.",
+    "target_lang": "fr"
+}

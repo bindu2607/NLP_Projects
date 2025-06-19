@@ -1,0 +1,7 @@
+{
+    "transcription": "Hello, this is a test.",
+    "translation": "Bonjour, ceci est un test.",
+    "audio": "base64_encoded_output_audio_string",
+    "similarity_score": 0.938,
+    "processing_time": 2.45
+}
