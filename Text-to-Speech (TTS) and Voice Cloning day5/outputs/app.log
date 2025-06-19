@@ -1,0 +1,7 @@
+INFO:__main__:TTS output saved to outputs/tts_output.wav
+INFO:__main__:Prosody analysis completed.
+INFO:__main__:Pitch contour saved to outputs/pitch_contour.png
+INFO:__main__:Speaker similarity computed: 0.6266
+INFO:__main__:Prosody analysis completed.
+
+

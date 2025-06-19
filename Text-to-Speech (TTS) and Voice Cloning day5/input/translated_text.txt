@@ -1,0 +1,1 @@
+Il s'agit d'une séquence de sons purs à différentes fréquences, conçue pour le test des systèmes audio.

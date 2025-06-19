@@ -1,0 +1,6 @@
+Prosody Analysis
+Original: {'mean_f0': 239.05963293542518, 'std_f0': 129.22206520156809, 'energy': 630.4603271484375, 'tempo': 93.96306818181819}
+Generated: {'mean_f0': 149.29803886600027, 'std_f0': 19.994892715920457, 'energy': 13.65802001953125, 'tempo': 89.28571428571429}
+F0 diff: 89.76
+Energy diff: 616.80
+Tempo diff: 4.68
