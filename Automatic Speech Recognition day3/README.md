@@ -14,6 +14,19 @@ This project demonstrates how to use OpenAI’s Whisper and Vosk for automatic s
 
 ---
 
+📊 Transcript Comparison & WER
+Compares Whisper and Vosk transcriptions line-by-line, highlights word differences in red, and calculates the Word Error Rate (WER) using jiwer.
+
+Input files:
+
+outputs/live_transcript.txt (Whisper)
+
+outputs/vosk_transcription.txt (Vosk)
+
+Dependencies: termcolor, jiwer
+
+Run the script to see differences and WER score.
+
 ## ⚙️ Setup Instructions
 
 1. Clone the Project
@@ -36,7 +49,7 @@ Make sure ffmpeg is also installed and added to your system PATH.
 
 ## 🧪 Usage
 
-**🔁 Transcribe an Audio File (Batch Mode)**
+ 🔁 Transcribe an Audio File (Batch Mode)
 ```
 python whisper_batch.py
 ```
@@ -44,13 +57,27 @@ Input: sample1.mp3
 
 Output: outputs/whisper_transcription.txt
 
-**🎤 Live Speech-to-Text with Whisper**
+ 🎤 Live Speech-to-Text with Whisper
 ```
 python whisper_live.py
 ```
-**🎤 Live ASR with Vosk**
+ 🎤 Live ASR with Vosk
 ```
 python vosk_live.py
+```
+
+📊 Transcript Comparison & WER
+- Compares Whisper and Vosk transcriptions line-by-line, highlights word differences in red, and calculates the Word Error Rate (WER) using jiwer.
+- Dependencies: termcolor, jiwer
+
+Run the script to see differences and WER score.
+
+**Run the Transcript Comparison Script**
+
+Make sure your transcripts are saved as: outputs/live_transcript.txt (Whisper output)
+outputs/vosk_transcription.txt (Vosk output)
+```
+python compare_asr.py
 ```
 
 ## 📂 Output Examples
