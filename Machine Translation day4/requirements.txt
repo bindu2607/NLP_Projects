@@ -1,0 +1,5 @@
+transformers>=4.0.0
+torch>=1.7.0
+sacrebleu>=2.0.0
+sentencepiece>=0.1.95
+numpy>=1.19.2

@@ -1,0 +1,36 @@
+[{
+        "id": 1,
+        "asr_output": "Hello how are you today?",
+        "ground_truth_translation": "Bonjour, comment allez-vous aujourd'hui ?"
+    },
+    {
+        "id": 2,
+        "asr_output": "The weather is nice outside.",
+        "ground_truth_translation": "Il fait beau dehors."
+    },
+    {
+        "id": 3,
+        "asr_output": "I would like to order a coffee please.",
+        "ground_truth_translation": "Je voudrais commander un café s'il vous plaît."
+    },
+    {
+        "id": 4,
+        "asr_output": "Where is the nearest train station?",
+        "ground_truth_translation": "Où est la gare la plus proche ?"
+    },
+    {
+        "id": 5,
+        "asr_output": "This is a test for the translation model.",
+        "ground_truth_translation": "Ceci est un test pour le modèle de traduction."
+    },
+    {
+        "id": 6,
+        "asr_output": "My name is Alex and I am an intern.",
+        "ground_truth_translation": "Je m'appelle Alex et je suis stagiaire."
+    },
+    {
+        "id": 7,
+        "asr_output": "Can you help me with this project?",
+        "ground_truth_translation": "Pouvez-vous m'aider avec ce projet ?"
+    }
+]
