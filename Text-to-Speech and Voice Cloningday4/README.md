@@ -27,6 +27,7 @@ pip install -r requirements.txt
 ```
 3. Ensure data/test_samples.json exists with entries like:
 json
+```
 [
   {
     "id": 1,
@@ -40,7 +41,8 @@ json
   }
   // more samples...
 ]
-4. Run the evaluation script
+```
+5. Run the evaluation script
 ```
 python src/evaluate_translations.py
 ```
@@ -58,15 +60,13 @@ The script will:
 
 ## Sample Output
 ```
---- Translation Evaluation Results ---
+## --- Translation Evaluation Results ---
 Source (ASR): "Hello how are you today?"
 Translated  : "Bonjour, comment allez-vous aujourd'hui ?"
 Expected    : "Bonjour, comment allez-vous aujourd'hui ?"
 Match       : Yes
 ```
-...
 
---- Summary ---
+## --- Summary ---
 Overall BLEU Score: 73.03
 Detailed results saved to: outputs/evaluation_results.json
------------------
