@@ -1,0 +1,3 @@
+Hello, this is a test of the speech recognition system.
+My name is Himabindu and I am working with ASR project.
+Artificial intelligence is changing the world and thank you for listening.
