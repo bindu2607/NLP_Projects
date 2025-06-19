@@ -1,0 +1,13 @@
+transformers
+torch
+sentencepiece
+openai-whisper
+streamlit
+whisper-timestamped
+pandas
+PyPDF2
+python-docx
+nltk
+pytest
+split
+jieba
