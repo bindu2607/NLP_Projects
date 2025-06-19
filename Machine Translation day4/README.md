@@ -11,6 +11,28 @@ Key functionalities include:
 - Computing corpus-level BLEU score using SacreBLEU.
 - Saving detailed evaluation results to a JSON file.
 
+## 🧠 Models & Frameworks Used
+
+### 🔤 Translation Model
+- **Model Name**: [Helsinki-NLP/opus-mt-en-fr](https://huggingface.co/Helsinki-NLP/opus-mt-en-fr)  
+- **Type**: MarianMT (Marian Machine Translation)  
+- **Purpose**: Translates English text (from ASR) to French  
+- **Framework**: Hugging Face `transformers`  
+- **Key Features**:
+  - Pretrained on large-scale parallel English–French corpora  
+  - Optimized for quality and efficiency  
+  - Uses SentencePiece tokenization for subword-level translation  
+
+### 📏 Evaluation Metric
+- **Metric**: BLEU (Bilingual Evaluation Understudy Score)  
+- **Library**: `sacrebleu`  
+- **Purpose**: Measures translation quality against ground truth references  
+- **Output**: Corpus-level BLEU score (% match with references)
+
+### ⚙️ Backend
+- **PyTorch**: Backend for running the MarianMT model  
+- **SentencePiece**: Tokenizer dependency for encoding/decoding input/output text
+
 ---
 
 ## Setup Instructions
@@ -26,6 +48,7 @@ source .venv/bin/activate   # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
 ```
 3. Ensure data/test_samples.json exists with entries like:
+```
 json
 [
   {
@@ -40,7 +63,8 @@ json
   }
   // more samples...
 ]
-4. Run the evaluation script
+```
+5. Run the evaluation script
 ```
 python src/evaluate_translations.py
 ```
@@ -64,7 +88,6 @@ Translated  : "Bonjour, comment allez-vous aujourd'hui ?"
 Expected    : "Bonjour, comment allez-vous aujourd'hui ?"
 Match       : Yes
 ```
-...
 
 --- Summary ---
 Overall BLEU Score: 73.03
