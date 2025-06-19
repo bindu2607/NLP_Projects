@@ -32,8 +32,7 @@ Run the script to see differences and WER score.
 1. Clone the Project
 
 ```bash
-git clone https://github.com/yourusername/your-repo-name.git
-cd Day-3
+git clone https://github.com/bindu2607/NLP_Projects/tree/main/Automatic%20Speech%20Recognition%20day3.git
 ```
 2. Create a Virtual Environment (Optional but Recommended)
 ```
