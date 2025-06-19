@@ -1,0 +1,48 @@
+{
+    "evaluation_timestamp": "2025-06-09T16:07:27.564266",
+    "bleu_score": "73.03",
+    "results": [
+        {
+            "id": 1,
+            "input_asr": "Hello how are you today?",
+            "ground_truth_translation": "Bonjour, comment allez-vous aujourd'hui ?",
+            "model_translation": "Bonjour, comment allez-vous aujourd'hui ?"
+        },
+        {
+            "id": 2,
+            "input_asr": "The weather is nice outside.",
+            "ground_truth_translation": "Il fait beau dehors.",
+            "model_translation": "Le temps est beau dehors."
+        },
+        {
+            "id": 3,
+            "input_asr": "I would like to order a coffee please.",
+            "ground_truth_translation": "Je voudrais commander un café s'il vous plaît.",
+            "model_translation": "Je voudrais commander un café, s'il vous plaît."
+        },
+        {
+            "id": 4,
+            "input_asr": "Where is the nearest train station?",
+            "ground_truth_translation": "Où est la gare la plus proche ?",
+            "model_translation": "Où est la gare la plus proche ?"
+        },
+        {
+            "id": 5,
+            "input_asr": "This is a test for the translation model.",
+            "ground_truth_translation": "Ceci est un test pour le modèle de traduction.",
+            "model_translation": "Il s'agit d'un test pour le modèle de traduction."
+        },
+        {
+            "id": 6,
+            "input_asr": "My name is Alex and I am an intern.",
+            "ground_truth_translation": "Je m'appelle Alex et je suis stagiaire.",
+            "model_translation": "Je m'appelle Alex et je suis stagiaire."
+        },
+        {
+            "id": 7,
+            "input_asr": "Can you help me with this project?",
+            "ground_truth_translation": "Pouvez-vous m'aider avec ce projet ?",
+            "model_translation": "Pouvez-vous m'aider pour ce projet ?"
+        }
+    ]
+}
