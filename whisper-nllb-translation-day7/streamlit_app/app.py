@@ -1,3 +1,8 @@
+import sys
+import os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+from utils.whisper_integration import transcribe_audio
+
 import os
 import sys
 import re
@@ -44,7 +49,7 @@ class Translator:
         inputs = self.tokenizer(text, return_tensors="pt", padding=True, truncation=True).to(self.device)
         generated_tokens = self.model.generate(
             **inputs,
-            forced_bos_token_id=self.tokenizer.lang_code_to_id[tgt_code],
+            forced_bos_token_id=self.tokenizer.convert_tokens_to_ids(tgt_code),
             max_length=512,
             num_beams=4,
             early_stopping=True
