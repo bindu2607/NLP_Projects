@@ -2,25 +2,36 @@ import whisper
 import tempfile
 import os
 
-# Load the Whisper model globally once
+# Load the Whisper model only once
 model = whisper.load_model("large")
 
 def transcribe_audio(audio_file):
     """
-    Transcribe an uploaded audio file (BytesIO or similar) to text using Whisper.
-    audio_file: a file-like object (e.g., Streamlit uploaded file).
-    Returns transcript string.
+    Transcribes an uploaded audio file using OpenAI's Whisper model.
+
+    Parameters:
+    - audio_file: A file-like object (e.g., from Streamlit uploader).
+
+    Returns:
+    - dict: A dictionary containing 'text', and optionally 'segments' and 'words'.
     """
-    # Create temp file with delete=False
+    # Create a temporary file from uploaded audio
     tmp = tempfile.NamedTemporaryFile(suffix=".wav", delete=False)
     try:
         tmp.write(audio_file.read())
-        tmp.close()  # Close the file so ffmpeg can access it
-        
-        # Now pass the temp file path to whisper
+        tmp.close()
+
+        # Run transcription (remove `word_timestamps=True` if you’re not using whisperx)
         result = model.transcribe(tmp.name)
+
+        # Ensure structure matches Streamlit app expectations
+        output = {
+            "text": result.get("text", ""),
+            "segments": result.get("segments", []),
+            "words": []  # Whisper (non-X) doesn't return word timestamps
+        }
+
     finally:
-        # Remove the temp file explicitly
         os.remove(tmp.name)
-    
-    return result["text"]
+
+    return output
