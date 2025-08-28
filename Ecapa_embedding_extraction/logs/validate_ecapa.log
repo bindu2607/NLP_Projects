@@ -1,0 +1,38 @@
+INFO:EvalScript:Loaded embeddings for 117 speakers
+INFO:EvalScript:Computing pairs...
+INFO:EvalScript:Same-speaker pairs: 69615
+INFO:EvalScript:Different-speaker pairs: 8312850
+INFO:EvalScript:Calculating cosine similarity scores...
+INFO:EvalScript:Computing EER...
+INFO:EvalScript:Overall EER: 0.0134
+INFO:EvalScript:Mean intra-speaker cosine similarity: 0.7387
+INFO:EvalScript:Mean inter-speaker cosine similarity: 0.2586
+
+========================================
+      Speaker Embedding Evaluation
+========================================
+Mean Intra-speaker Similarity : 0.7487
+Mean Inter-speaker Similarity : 0.2586
+Overall Equal Error Rate (EER): 0.0134
+========================================
+
+
+
+INFO:EvalScript:Loading embeddings from D:\Oscowl ai\AISHELL3 Speaker Embedding Extractor day8\processed\embedding_extraction\test\embeddings
+INFO:EvalScript:Loaded embeddings for 120 speakers
+INFO:EvalScript:Computing pairs...
+INFO:EvalScript:Same-speaker pairs: 193728
+INFO:EvalScript:Different-speaker pairs: 10778542
+INFO:EvalScript:Calculating cosine similarity scores...
+INFO:EvalScript:Computing EER...
+INFO:EvalScript:Overall EER: 0.0175
+INFO:EvalScript:Mean intra-speaker cosine similarity: 0.7295
+INFO:EvalScript:Mean inter-speaker cosine similarity: 0.2676
+
+========================================
+      Speaker Embedding Evaluation
+========================================
+Mean Intra-speaker Similarity : 0.7295
+Mean Inter-speaker Similarity : 0.2676
+Overall Equal Error Rate (EER): 0.0175
+========================================

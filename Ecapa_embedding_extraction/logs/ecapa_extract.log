@@ -1,0 +1,6 @@
+2025-08-28 15:12:11 | INFO    | Using device: cpu
+2025-08-28 15:12:11 | INFO    | Loading ECAPA-TDNN model (SpeechBrain, 192-dim)...
+2025-08-28 15:12:13 | INFO    | Model loaded in 1.82s
+2025-08-28 15:12:13 | INFO    | [train] Found 171 speakers
+2025-08-28 15:12:13 | INFO    | [train] Speaker user_0001: 35 files
+2025-08-28 15:12:19 | INFO    | [train] Speaker user_0002: 35 files
